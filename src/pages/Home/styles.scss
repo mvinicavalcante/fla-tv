@@ -1,0 +1,9 @@
+$home-color-background: #1C1C1C;
+$default-font-color: white;
+
+.home {
+    background-color: $home-color-background;
+    color: $default-font-color;
+    justify-content: center;
+    display: flex;
+}
