@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 
 const Elenco = () => {
@@ -9,6 +10,7 @@ const Elenco = () => {
                 elenco={true}
                 login={false} 
             />
+            <Footer />
         </div>
     )
 }
