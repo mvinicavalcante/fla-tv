@@ -1,4 +1,6 @@
-$background-banner-color: #1C1C1C;;
+$background-banner-color: #1C1C1C;
+$background-live-color: #EE0707;
+$competition-name-color: #9C9090;
 
 .banner {
     background-color: $background-banner-color;
@@ -10,5 +12,36 @@ $background-banner-color: #1C1C1C;;
     .svg {
         width: 90%;
         height: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
+
+    .infos{
+        padding: 0px 100px;
+        position: absolute;
+        text-align: left;
+        bottom: 50px;
+
+        .live{
+            background-color: $background-live-color;
+            padding: 5px 5px;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+
+        .teams{
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        .competition-name {
+            text-transform: uppercase;
+            color: $competition-name-color;
+        }
+
+    }
+    
 }
