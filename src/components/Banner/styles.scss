@@ -8,6 +8,8 @@ $competition-name-color: #9C9090;
     padding: 20px 0px;
     width: 100vw;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 
     .svg {
         width: 90%;
@@ -44,4 +46,53 @@ $competition-name-color: #9C9090;
 
     }
     
+}
+
+@media screen and (max-width: 700px) {
+    .banner {
+        background-color: $background-banner-color;
+        position: relative;
+        padding: 20px 0px;
+        display: block;
+        margin: 0 auto;
+
+        .svg {
+            width: 90%;
+            height: 100%;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .infos{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            text-align: center;
+            bottom: 50px;
+            font-size: 10px;
+            padding: 0;
+
+            .live{
+                background-color: $background-live-color;
+                padding: 5px 5px;
+                border-radius: 10px;
+                text-transform: uppercase;
+            }
+
+            .teams{
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-top: 10px;
+                font-size: 13px;
+            }
+
+            .competition-name {
+                text-transform: uppercase;
+                color: $competition-name-color;
+            }
+
+        }
+    }
 }
